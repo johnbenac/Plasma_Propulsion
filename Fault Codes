@@ -2,31 +2,31 @@
 #define ERROR_CODES_H_
 
 //Error codes: this must be on line 4 in order for the confluence parsing correctly begin to pick up the fault codes. 
-#define WRONG_COMMAND_FOR_STATE	0x01	// Wrong command received for the operational state.	NA	Hold for valid command	No
-#define WRONG_STATE_COMMAND	0x02	//Wrong state transition command was sent.	NA Hold for valid command	No
-#define STATE_MIX	0x03	//State mix-up (ex: told to ARM cold gas, but hot-fire parameters were sent	NA	Hold for valid command	No
-#define CG_TIME_OOB	0x04	//Cold gas thrust duration out of bounds	0x00 ↔ 0x78 & 0xFF	Hold for valid command	No
-#define RF_TIME_OOB	0x05	//RF thrust duration out of bounds	0x00 ↔ 0x78 & 0xFFHold for valid command	No
-#define THROTTLE_OOB	0x06	//Throttle setting out of bounds	0x00 ↔ 0x78 & 0xFF	Hold for valid command	No
-#define NO_PLASMA	0x07 //After attempted sparks reach 5 times, and no plasma, flag this error	
-#define NO_SPARK	0x08	//to be determined
-#define TELEM_CRC_FAIL	0x09	//to be determined
-#define SPI_WRITE_FORMAT	0x0A	//to be determined
-#define SV_ISO_OVER_CURRENT	0x0B	
-#define SV_ISO_UNDER_CURRENT	0x0C	
-#define SV_BB_OVER_CURRENT	0x0D	
-#define SV_BB_UNDER_CURRENT	0x0E	
-#define TANK_PRES_HIGH	0x0F	
-#define TANK_TEMP_HIGH	0x10	
-#define RF_CURRENT_HIGH	0x11	
-#define RF_CURRENT_LOW	0x12	
-#define PLASMA_DETUNED	0x13	
-#define ISOLATION_FAULT	0x14	
-#define P_TANK_OOB	0x15	
-#define P_LOWP_OOB	0x16	
-#define P_BB_OOB	0x17	
-#define T_TANK_OOB	0x18	
-#define T_LOWP_OOB	0x19	
-#define T_BB_OOB	0x1A	
+#define WRONG_COMMAND_FOR_STATE   	0x01  // Wrong command received for the operational state.	NA	Hold for valid command	No
+#define WRONG_STATE_COMMAND	        0x02  //Wrong state transition command was sent.	NA Hold for valid command	No
+#define STATE_MIX                 	0x03  //State mix-up (ex: told to ARM cold gas, but hot-fire parameters were sent	NA	Hold for valid command	No
+#define CG_TIME_OOB               	0x04  //Cold gas thrust duration out of bounds	0x00 ↔ 0x78 & 0xFF	Hold for valid command	No
+#define RF_TIME_OOB               	0x05  //RF thrust duration out of bounds	0x00 ↔ 0x78 & 0xFFHold for valid command	No
+#define THROTTLE_OOB               	0x06  //Throttle setting out of bounds	0x00 ↔ 0x78 & 0xFF	Hold for valid command	No
+#define NO_PLASMA	                  0x07  //After attempted sparks reach 5 times, and no plasma, flag this error	
+#define NO_SPARK                  	0x08  //to be determined
+#define TELEM_CRC_FAIL            	0x09  //to be determined
+#define SPI_WRITE_FORMAT	          0x0A  //to be determined
+#define SV_ISO_OVER_CURRENT	        0x0B	
+#define SV_ISO_UNDER_CURRENT	      0x0C	
+#define SV_BB_OVER_CURRENT        	0x0D	
+#define SV_BB_UNDER_CURRENT	        0x0E	
+#define TANK_PRES_HIGH	            0x0F	
+#define TANK_TEMP_HIGH	            0x10	
+#define RF_CURRENT_HIGH	            0x11	
+#define RF_CURRENT_LOW	            0x12	
+#define PLASMA_DETUNED		          0x13	
+#define ISOLATION_FAULT		          0x14	
+#define P_TANK_OOB		              0x15	
+#define P_LOWP_OOB		              0x16	
+#define P_BB_OOB	    	            0x17	
+#define T_TANK_OOB		              0x18	
+#define T_LOWP_OOB		              0x19	
+#define T_BB_OOB		                0x1A	
 
 #endif /* ERROR_CODES_H_ */
