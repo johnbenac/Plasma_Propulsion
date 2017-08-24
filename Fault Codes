@@ -10,7 +10,7 @@
 #define THROTTLE_OOB	0x06	//Throttle setting out of bounds	0x00 ↔ 0x78 & 0xFF	Hold for valid command	No
 #define NO_PLASMA	0x07 //After attempted sparks reach 5 times, and no plasma, flag this error	
 #define NO_SPARK	0x08	//to be determined
-#define TELEM_CRC_FAIL	0x09	
+#define TELEM_CRC_FAIL	0x09	//to be determined
 #define SPI_WRITE_FORMAT	0x0A	
 #define SV_ISO_OVER_CURRENT	0x0B	
 #define SV_ISO_UNDER_CURRENT	0x0C	
