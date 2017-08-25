@@ -14,7 +14,7 @@
 #define SPI_WRITE_FORMAT	          0x0A  //to be determined
 #define SV_ISO_OVER_CURRENT	        0x0B	//to be determined
 #define SV_ISO_UNDER_CURRENT	      0x0C	//BPACT12HWT
-#define SV_BB_OVER_CURRENT        	0x0D	
+#define SV_BB_OVER_CURRENT        	0x0D	//welcome simon
 #define SV_BB_UNDER_CURRENT	        0x0E	
 #define TANK_PRES_HIGH	            0x0F	
 #define TANK_TEMP_HIGH	            0x10	
